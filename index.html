@@ -1,0 +1,95 @@
+<html>
+<head>
+
+<title>Calcula área</title>
+<script language="JAVASCRIPT">
+//area triangle
+function areati()  {
+var base = prompt ("Introduce la base")
+var altura = prompt ("Introduce la altura")
+var sum = (1/2)*base*altura
+alert("El área es "+sum+"")
+
+}
+//area circle
+function areac()  {
+var radius = prompt ("Introduce el radio")
+var pi = "3.14159"
+var sum = radius*radius*pi
+alert("El área es "+sum+"")
+
+}
+//area rectangle
+function arear()  {
+var length = prompt ("Introduce legth")
+var width = prompt ("Introduce width")
+var sum = width*length
+alert("El área es "+sum+"")
+
+}
+//area trapezoid
+function areata()  {
+var baseone = prompt ("Introduce base one")
+var basetwo = prompt ("Introduce base two")
+var altura = prompt ("Introduce altura")
+var sum = (1/2)*altura*(baseone+basetwo)
+alert("El área es "+sum+"")
+
+}
+//area rhombus
+function arearh()  {
+var onediag = prompt ("Introduce la primera diagonal")
+var twodiag = prompt ("Introduce la segunda diagonal")
+var sum = onediag*twodiag*(1/2)
+alert("El área es "+sum+"")
+
+}
+//area oval
+function areao()  {
+var length = prompt ("Introduce la longitud")
+var altura = prompt ("Introduce la altura")
+var pi = 3.14159
+var sum = (pi*length)/altura
+alert("El área es "+sum+"")
+
+}
+//volume rect prism
+function volumerp()  {
+var length = prompt ("Introduce length")
+var width = prompt ("Introduce width")
+var altura = prompt ("Introduce altura")
+var sum = length*width*altura
+alert("El volumen es "+sum+"")
+
+}
+
+
+
+</script>
+<form>
+  
+  
+</head>
+
+<body>
+
+<center>
+<h3><font size="3" face="Verdana">Calcula área</font></h3>
+<p><input onclick="areati()" type="button" value="Área del triángulo">
+<input onclick="areac()" type="button" value="Área del círculo">
+<input onclick="arear()" type="button" value="Área del rectángulo"> </p>
+<p><input onclick="areata()" type="button" value="Área del trapezoide">
+<input onclick="arearh()" type="button" value="Área del rombo">
+<input onclick="areao()" type="button" value="Área del óvalo"> </p>
+<hr>
+<h3><font size="3">Volumen de una figura tridimensional</font></h3>
+<p>
+<input onclick="volumerp()" type="button" value="Volumen de un prisma rectangular">
+</p>
+</center>
+</form>
+
+
+</body>
+
+</html>
